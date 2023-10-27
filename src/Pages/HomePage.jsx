@@ -6,7 +6,7 @@ import Homepng from "../Assets/homePageMainImage.png"
 function HomePage(){
     return(
         <HomeLayout>
-            <div className="pt-10  md:max-w-5xl lg:max-w-7xl text-white flex items-center justify-center gap-10 mx-6 lg:mx-auto h-[90vh]">
+            <div className="pt-10  md:max-w-5xl lg:max-w-7xl text-white flex items-center justify-center gap-10 mx-6 lg:mx-auto h-screen">
                 <div className="md:w-1/2 space-y-6">
                     <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-white">
                         Find Out Best
