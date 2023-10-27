@@ -7,14 +7,14 @@ import { useDispatch, useSelector } from 'react-redux'
 
  function HomeLayout({ children }) {
 
-    // const dispatch = useDispatch();
-    // const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
 
-    // // for checking if user is logged in 
-    // const isLoggedIn = useSelector((state) => state?.auth?.isLoggedIn);
+    // for checking if user is logged in 
+    const isLoggedIn = useSelector((state) => state?.auth?.isLoggedIn);
 
-    // // for displaying the options acc to role
-    // const role = useSelector((state) => state?.auth?.role)
+    // for displaying the options acc to role
+    const role = useSelector((state) => state?.auth?.role)
 
     function changeWidth(){
         const drawerSlide = document.getElementsByClassName("drawer-side");
@@ -28,13 +28,13 @@ import { useDispatch, useSelector } from 'react-redux'
         // changeWidth();
     }
 
-    // function handleLogout (e) {
-    //     e.preventDefault();
+    function handleLogout (e) {
+        e.preventDefault();
 
-    //     // const res = await dispatch(logout())
-    //     // if(res?.payload?.success)
-    //     navigate("/");
-    // }
+        // const res = await dispatch(logout())
+        // if(res?.payload?.success)
+        navigate("/");
+    }
 
   return (
     <div className='min-h-[90vh]'>
@@ -59,11 +59,11 @@ import { useDispatch, useSelector } from 'react-redux'
                     <li>
                         <Link to="/">Home</Link>
                     </li>
-                    {/* {isLoggedIn && role === "ADMIN" && (
+                    {isLoggedIn && role === "ADMIN" && (
                         <li>
                             <Link to="/admin/dashboard">Admin Dashboard</Link>
                         </li>
-                    )} */}
+                    )}
                     <li>
                         <Link to="/courses">All Courses</Link>
                     </li>
@@ -74,7 +74,7 @@ import { useDispatch, useSelector } from 'react-redux'
                         <Link to="/about">About Us</Link>
                     </li>
 
-                    {/* {!isLoggedIn && (
+                    {!isLoggedIn && (
                         <li className='absolute bottom-4 w-[90%]'>
                         <div className='w-full flex items-center justify-center'>
                             <button className='btn-primary px-4 py-1 font-semibold rounded-md w-full'>
@@ -98,7 +98,7 @@ import { useDispatch, useSelector } from 'react-redux'
                             </button>
                         </div>
                         </li>
-                    )}           */}
+                    )}          
                 </ul>
             </div>
         </div>
