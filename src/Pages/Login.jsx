@@ -30,6 +30,8 @@ function Login() {
       return;
     }
 
+    
+
     //dispatch create account action
     const response = await dispatch(login(loginData));
     if (response.payload.success) navigate("/");
