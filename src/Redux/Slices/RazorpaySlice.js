@@ -44,7 +44,7 @@ export const verifyUserPayment = createAsyncThunk("/payments/verify", async(data
 
 export const getPaymentRecord = createAsyncThunk("/payments/record", async()=>{
     try{
-        const response = axiosInstance.get("/payment?count=100");
+        const response = axiosInstance.get("/payments?count=100");
         toast.promise(response,{
             loading: "Getting the payment records",
             success: (data) => {
@@ -58,21 +58,23 @@ export const getPaymentRecord = createAsyncThunk("/payments/record", async()=>{
     }
 })
 
-export const cancelSubscription = createAsyncThunk("/payments/cancel", async()=>{
-    try{
-        const response = axiosInstance.post("/payment/unsubscription");
+export const cancelCourseBundle = createAsyncThunk("/payments/cancel", async(data)=>{
+    try {
+        const response = await axiosInstance.post("/payments/unsubscribe");
+        console.log(response,"caj")
         toast.promise(response,{
-            loading: "Unsubscribing The Bundle",
+            loading: "unsubcribing the Bundle",
             success: (data) => {
                 return data?.data?.message
             },
-            error:"Failed to Unsubscribe"
+            error: "Failed to unsubcribe"
         })
-        return (await response).data;
-    }catch (error) {
+        return response.data;
+    } catch (error) {
         toast.error(error?.response?.data?.message);
     }
 })
+
 const razorpaySlice = createSlice({
     name:"razorpay",
     initialState,
@@ -106,3 +108,5 @@ const razorpaySlice = createSlice({
 })
 
 export default razorpaySlice.reducer;
+
+
