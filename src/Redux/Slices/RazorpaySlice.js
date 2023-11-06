@@ -6,8 +6,8 @@ const initialState = {
     key:"",
     subscription_id:"",
     isPaymentVerified: false,
-    allPayments: [],
-    finalMonth: {},
+    allPayments: {},
+    finalMonths: {},
     monthlySalesRecord: []
 }
 

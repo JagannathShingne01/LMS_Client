@@ -31,7 +31,7 @@ function HomePage(){
                 <div className="lg:w-1/2 items-center justify-center">
                     <img src={Homepng} alt="Home Image" />
                 </div>
-
+                
             </div>
         </HomeLayout>
     )
