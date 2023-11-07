@@ -33,18 +33,17 @@ function AboutUS(){
             <div className="pt-14 flex flex-col text-white max-w-7xl mx-auto">
                 <div className="flex flex-col-reverse md:flex-row  items-center gap-2 mx-4">
                     <section className="md:w-1/2   ">
-                        <h1 className="text-2xl md:text-left md:text-2xl lg:text-5xl text-yellow-500 font-semibold">
-                            Lorem ipsum dolor sit.
+                        <h1 className="text-2xl md:text-left md:text-2xl lg:text-5xl text-primary font-semibold">
+                        About Us
                         </h1>
-                        <p className="text-base">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veniam temporibus aperiam officiis delectus ea architecto. Non, sint eveniet porro soluta repellendus omnis blanditiis iure dicta? Minima nemo modi sapiente?Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, odit!
-                        </p>
+                        <p className="text-base pt-5">
+                        Coursify's mission is to permeate through every student/professional's outlook towards jobs and change their attitude and perspective from "How Can I Do It?" to "Of Course I Can Do It". We aim to do this by providing exceptional up skilling courses at affordable rates, while being tech-forward so anyone, anywhere can access and improve their ability to be successful in life.                        </p>
                     </section>
                     <div className="md:w-1/2 ">
                         <img id="test1"
                         style={{filter:"drop-shadow(0px 10px 10px rgb(0,0,0))"}}
                         alt="about main image"
-                        className="drop-shadow-2xl"
+                        className="drop-shadow-2xl md:pl-10"
                         src={aboutImg}
                         />
                     </div>
@@ -53,6 +52,13 @@ function AboutUS(){
                     {celebrities && celebrities.map(celb =>  <CarouselSlide {...celb} key={celb.slideNumber} totalSlides={celebrities.length}/>)}
                
                 </div>
+                <div className="flex justify-center items-center text-5xl ">
+                    Our Services
+                </div>
+                <section>
+                        <h1>Affordable online courses</h1>
+                        <p>Affordable online courses along with learning communities.</p>
+                    </section>
             </div>
         </HomeLayout>
     )

@@ -11,7 +11,7 @@ function Footer(){
     return(
         <>
        
-        <footer className='relative py-2 px-4 left-0 bottom-0 h-[20vh] flex flex-row md:flex-col  text-white bg-base-200 '>
+        <footer className='relative py-2 px-4 left-0 bottom-0 w-full h-[30vh] md:h-[20vh] flex flex-row md:flex-col  text-white bg-base-200 '>
             <section className='text-5xl text-primary pt-6 pl-5'>
                 <a href="/">Coursfy</a>
             </section>

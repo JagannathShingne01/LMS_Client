@@ -9,7 +9,7 @@ export default {
         secondary: "#BF0215",
         tertiary: "#191919",
         bgBlack: "#0A142F",
-        light: "#eff6fb",
+        light: "#84cc16",
         accent: "#e6e7f0",
       },
     },

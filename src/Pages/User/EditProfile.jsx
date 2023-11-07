@@ -105,7 +105,7 @@ function EditProfile (){
                                 onChange={handleInputChange}
                                 />
                         </div>
-                        <button onSubmit={onFormSubmit} className="bg-yellow-500 hover:bg-yellow-600 transition-all ease-in-out duration-300 rounded-sm font-semibold py-2 cursor-pointer">
+                        <button onSubmit={onFormSubmit} className="bg-primary hover:bg-light transition-all ease-in-out duration-300 rounded-sm font-semibold py-2 cursor-pointer">
                             Update Profile
                         </button>
                         <Link to="/user/profile">

@@ -14,22 +14,22 @@ function CourseCard ({data}){
                 className="h-48 w-full rounded-tl-lg rounded-tr-lg group-hover:scale-[1,2] transition-all ease-in-out duration-300"
                 />
                 <div className="px-3 mt-3">
-                    <h2 className=" text-2xl space-y-1 text-white line-clamp-2 font-bold group-hover:text-yellow-500">
+                    <h2 className=" text-2xl space-y-1 text-white line-clamp-2 font-bold group-hover:text-primary">
                         {data?.title}
                     </h2>
                     <p className="line-clamp-2">
                         {data?.description}
                     </p>
                     <p className="font-semibold">
-                        <span className="text-yellow-500 font-bold">Category : </span>
+                        <span className="text-primary font-bold">Category : </span>
                         {data?.category}
                     </p>
                     <p className="font-semibold">
-                        <span className="text-yellow-500 font-bold">Total Lectures : </span>
+                        <span className="text-primary font-bold">Total Lectures : </span>
                         {data?.numberOfLectures}
                     </p>
                     <p className="font-semibold">
-                        <span className="text-yellow-500 font-bold"> Instructer : </span>
+                        <span className="text-primary font-bold"> Instructer : </span>
                         {data?.createdBy}
                     </p>
                     

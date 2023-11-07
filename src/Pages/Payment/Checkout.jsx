@@ -71,25 +71,25 @@ function Checkout (){
 
                 >
                     <div className="relative w-80 h-[27rem] flex flex-col justify-center shadow-[0_0_10px_black] rounded-lg">
-                        <h1 className="bg-yellow-500 absolute top-0 w-full text-center py-4 text-2xl font-bold rounded-t-lg">Subscription Bundle</h1>
+                        <h1 className="bg-primary absolute top-0 w-full text-center py-4 text-2xl font-bold rounded-t-lg">Subscription Bundle</h1>
                         <div className="px-4 space-y-5 text-center">
                             <p className="text-[17px]">
                                 This purchase will allow you to access all available course
                                 of our platform for {""}
-                                <span className="text-yellow-500 font-bold">
+                                <span className="text-primary font-bold">
                                     <br/>
                                     1 Year Duration{" "}
                                 </span>
                                 All the existing and new launched courses will be also available.
                             </p>
-                            <p className="flex items-center justify-center gap-1 text-2xl font-bold text-yellow-500">
+                            <p className="flex items-center justify-center gap-1 text-2xl font-bold text-primary">
                                 <BiRupee/> <span>499</span> Only
                             </p>
                             <div className="text-gray-100">
                                 <p>100% refund on cancellation</p>
                                 <p>* Terms and Conditions applied *</p>
                             </div>
-                            <button type="submit" className="absolute bottom-0 bg-yellow-500 hover:bg-yellow-600 transition-all ease-in-out duration-300 w-full left-0 text-xl py-2 rounded-b-lg font-bold">
+                            <button type="submit" className="absolute bottom-0 bg-primary hover:bg-light transition-all ease-in-out duration-300 w-full left-0 text-xl py-2 rounded-b-lg font-bold">
                                 Buy Now!
                             </button>
                         </div>

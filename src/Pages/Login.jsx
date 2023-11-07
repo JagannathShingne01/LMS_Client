@@ -84,7 +84,7 @@ function Login() {
             </div>
             <button
               type="submit"
-              className="bg-yellow-600 py-2 text-lg cursor-pointer  hover:bg-yellow-400 rounded transition-all ease-in-out duration-300"
+              className="bg-light py-2 text-lg cursor-pointer  hover:bg-yellow-400 rounded transition-all ease-in-out duration-300"
             >
               Login
             </button>

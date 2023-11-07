@@ -32,7 +32,7 @@ function Displaylectures(){
         <HomeLayout>
 
         <div className="flex flex-col gap-10 items-center justify-center min-h-screen py-10  text-white mx-1">
-            <div className="text-center text-2xl font-semibold text-yellow-500">
+            <div className="text-center text-2xl font-semibold text-primary">
                 Course Name : {state?.title}
             </div>
 
@@ -52,13 +52,13 @@ function Displaylectures(){
                     </video>
                     <div>
                         <h1>
-                            <span className="text-yellow-500 ">
+                            <span className="text-primary ">
                                 Title: {" "}
                             </span>
                             {lectures && lectures[currentVideo]?.title}
                         </h1>
                         <p>
-                            <span className="text-yellow-500 line-clamp-4">
+                            <span className="text-primary line-clamp-4">
                                 Description: {" "}
                             </span>
                             {lectures && lectures[currentVideo]?.description}
@@ -69,7 +69,7 @@ function Displaylectures(){
                 {/* right section for displaying list of lectures */}
 
                 <ul className="w-[28rem] p-2 rounded-lg shadow-[0_0_10px_black]">
-                        <li className="font-semibold text-xl text-yellow-500 flex items-center justify-between">
+                        <li className="font-semibold text-xl text-primary flex items-center justify-between">
                             <p>
                                 Lectures List
                             </p>

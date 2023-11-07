@@ -76,7 +76,7 @@ function AdminDashboard (){
 return(
     <HomeLayout>
         <div className="min-h-[90vh] pt-5 flex flex-col flex-wrap gap-10 text-White">
-            <h1 className="text-center text-5xl font-semibold text-yellow-500">
+            <h1 className="text-center text-5xl font-semibold text-primary">
                 Admin Dashbord
             </h1>
             <div className="grid grid-cols-2 gap-5 m-auto mx-10">
@@ -90,7 +90,7 @@ return(
                                 <p className="font-semibold "> Registered Users </p>
                                 <h3 className="text-2xl md:text-4xl font-bold">{allUsersCount}</h3>
                             </div>
-                            <FaUsers className="text-yellow-500 text-5xl"/>
+                            <FaUsers className="text-primary text-5xl"/>
                         </div>
                         <div className="flex items-center justify-between p-5 gap-5 rounded-lg shadow-lg">
                             <div className="flex flex-col items-center ">
@@ -113,14 +113,14 @@ return(
                                     <h3 className="text-2xl md:text-4xl font-bold">{allPayments?.count}</h3>
                                 </div>
 
-                                <FcSalesPerformance className="text-yellow-500 text-5xl"/>
+                                <FcSalesPerformance className="text-primary text-5xl"/>
                     </div>
                     <div className="flex items-center justify-between p-5 gap-5 rounded-lg shadow-lg">
                                 <div className="flex flex-col items-center ">
                                     <p className="font-semibold "> Total Revenue </p>
                                     <h3 className="text-2xl md:text-4xl font-bold">{allPayments?.count * 499}</h3>
                                 </div>
-                                <GiMoneyStack className="text-yellow-500 text-5xl"/>
+                                <GiMoneyStack className="text-primary text-5xl"/>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@ return(
                     <button 
                         onClick={()=>{
                             navigate("/course/create")}}
-                            className="bg-yellow-600 py-2 w-fit px-4 text-lg font-semibold cursor-pointer  hover:bg-yellow-400 rounded transition-all ease-in-out duration-300"
+                            className="bg-light py-2 w-fit px-4 text-lg font-semibold cursor-pointer  hover:bg-yellow-400 rounded transition-all ease-in-out duration-300"
                             >
                             Create New Course
                     </button>

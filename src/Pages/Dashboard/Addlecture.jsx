@@ -71,7 +71,7 @@ function Addlecture (){
                         >
                             <AiOutlineArrowLeft/>
                         </button>
-                        <h1 className="text-xl text-yellow-500 font-semibold">
+                        <h1 className="text-xl text-primary font-semibold">
                             Add new lecture
                         </h1>
                     </header>
