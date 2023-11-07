@@ -23,7 +23,7 @@ function Checkout (){
     async function handleSubscription(e){
         e.preventDefault();
         if(!razorpayKey || !subscription_id){
-            toast.error("Something went rgrgwrong");
+            toast.error("Something went wrong, Try again!");
             return;
         }
         const options = {

@@ -12,13 +12,15 @@ function Profile(){
     const userData = useSelector((state) => state?.auth?.data);
 
     async function handleCancellation(){
-        await dispatch(getUserData());
-
         await dispatch(cancelCourseBundle());
+        await dispatch(getUserData());
         toast.success("canclellation completed!");
         navigate("/")
     }
-
+    useEffect(() => {
+        // getting user details
+        dispatch(getUserData());
+      }, []);
     return(
        <HomeLayout>
         <div className="min-h-[90vh] flex items-center justify-center">
@@ -30,8 +32,8 @@ function Profile(){
                 <h3 className="text-xl font-semibold text-center capitalize">
                     {userData?.fullName}
                 </h3>
-                <div className="grid grid-cols-2">
-                    <p>Email:</p><p>{userData?.email}</p>
+                    <div className="grid grid-cols-2">
+                        <p>Email:</p><p>{userData?.email}</p>
                     <p>Role:</p><p>{userData?.role}</p>
                     <p>Subscription:</p><p>{userData?.subscription?.status === "active" ? "Active" : "Inactive"}</p>
                 </div>
@@ -49,7 +51,7 @@ function Profile(){
                             <button className="ml-2">
                                 Edit Profile
                             </button>
-                    </Link>
+                    </Link> 
                 </div>
                 {userData?.subscription?.status === "active" &&  (
                     <button onClick={() => {handleCancellation()}}  className="w-full bg-red-500 hover:bg-red-600 transition-all ease-in-out duration-300 rounded-sm font-semibold py-2 cursor-pointer">

@@ -13,7 +13,9 @@ function HomePage(){
                         <span className="text-yellow-500 font-bold px-2">Online Courses</span>
                     </h1>
                     <p className="text-white md:text-base lg:text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quia necessitatibus, rerum aperiam accusamus exercitationem.
+                    Coursify is your one-stop-shop for upscaling. Get maximum value for time
+and resources you invest, with job-ready courses & high-technology,
+available at the lowest cost.
                     </p>
                     <div>
                         <Link className="space-x-6"> 
