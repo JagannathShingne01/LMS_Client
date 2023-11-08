@@ -117,7 +117,7 @@ function Contact() {
             </div>
           </div>
 
-        <div className="h-[50vh] w-[30%] absolute bg-primary top-0 right-0 z-10">
+        <div className="lg:block hidden h-[50vh] w-[30%] absolute bg-primary top-0 right-0 z-10">
                             <div>
 
                             </div>
