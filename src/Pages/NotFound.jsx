@@ -8,7 +8,7 @@ function NotFound() {
             <h1 className=" text-9xl font-extrabold tracking-widest text-primary">
                     404
             </h1>
-            <div className="text-white px-2 text-2xl ">
+            <div className="text-black px-2 text-2xl ">
             Seems you came to no man's land.
             </div>
             <button className="mt-6">

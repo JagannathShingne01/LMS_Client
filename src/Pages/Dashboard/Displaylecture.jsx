@@ -31,7 +31,7 @@ function Displaylectures(){
     return(
         <HomeLayout>
 
-        <div className="flex flex-col gap-10 items-center justify-center min-h-screen py-10  text-white mx-1">
+        <div className="flex flex-col gap-10 items-center justify-center min-h-screen py-10  text-black mx-1">
             <div className="text-center text-2xl font-semibold text-primary">
                 Course Name : {state?.title}
             </div>

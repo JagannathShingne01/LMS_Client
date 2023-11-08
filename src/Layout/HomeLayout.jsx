@@ -45,13 +45,13 @@ import { logout } from '../Redux/Slices/AuthSlice'
                 <label htmlFor="my-drawer" className='cursor-pointer relative'>
                     <FiMenu
                     size={"32px"}
-                    className= "font-bold text-white m-4 "
+                    className= "font-bold text-primary m-4 "
                     />
                 </label>
             </div>
             <div className='drawer-side w-auto '>
                 <label htmlFor="my-drawer" className='drawer-overlay'></label>
-                <ul className="menu p-4 w-48 sm:w-80 h-[100%] bg-base-200 text-base-content relative">
+                <ul className="menu p-4 w-48 sm:w-80 h-[100%] bg-secondary text-primary relative">
                     <li className='w-fit absolute right-2 z-50'>
                         <button>
                             <AiFillCloseCircle onClick={hideDrawer} size={24}/>

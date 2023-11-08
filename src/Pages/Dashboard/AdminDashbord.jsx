@@ -75,7 +75,7 @@ function AdminDashboard (){
 
 return(
     <HomeLayout>
-        <div className="min-h-[90vh] pt-5 flex flex-col flex-wrap gap-10 text-White">
+        <div className="min-h-[90vh] pt-5 flex flex-col flex-wrap gap-10 text-black">
             <h1 className="text-center text-5xl font-semibold text-primary">
                 Admin Dashbord
             </h1>

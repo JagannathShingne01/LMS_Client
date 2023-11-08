@@ -12,7 +12,7 @@ function CoueseDescription(){
     },[]);
     return(
             <HomeLayout>
-                <div className="min-h-[90vh] pt-12 px-20 flex flex-col items-center justify-center text-white">
+                <div className="min-h-[90vh] pt-12 px-20 flex flex-col items-center justify-center text-black">
                     <div className="grid grid-cols-2 gap-10 py-10 relative">
                         <div>
                             <img 

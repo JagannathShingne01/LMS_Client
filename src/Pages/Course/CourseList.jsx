@@ -20,7 +20,7 @@ function CourseList(){
 
     return(
         <HomeLayout>
-            <div className="min-h-[90vh] pt-16  flex flex-col gap-4 md:gap-10 lg:gap-16 text-white md:max-w-7xl mx-auto">
+            <div className="min-h-[90vh] pt-16  flex flex-col gap-4 md:gap-10 lg:gap-16 text-black md:max-w-7xl mx-auto">
                 <h1 className="text-center text-xl md:3xl lg:text-5xl">
                     Explore the courses made by 
                     <span className="font-bold text-primary ml-2">Industry Experts</span>

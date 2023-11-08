@@ -67,7 +67,7 @@ function Checkout (){
             <div className="h-screen">
                 <form
                     onSubmit={handleSubscription}
-                    className="min-h-[90vh] flex items-center justify-center text-white"
+                    className="min-h-[90vh] flex items-center justify-center text-black"
 
                 >
                     <div className="relative w-80 h-[27rem] flex flex-col justify-center shadow-[0_0_10px_black] rounded-lg">

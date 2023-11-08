@@ -30,7 +30,7 @@ function AboutUS(){
 
     return(
         <HomeLayout>
-            <div className="pt-14 flex flex-col text-white max-w-7xl mx-auto">
+            <div className="pt-14 flex flex-col text-black max-w-7xl mx-auto">
                 <div className="flex flex-col-reverse md:flex-row  items-center gap-2 mx-4">
                     <section className="md:w-1/2   ">
                         <h1 className="text-2xl md:text-left md:text-2xl lg:text-5xl text-primary font-semibold">
@@ -56,9 +56,10 @@ function AboutUS(){
                     Our Services
                 </div>
                 <section>
+                    <img src="" alt="" />
                         <h1>Affordable online courses</h1>
                         <p>Affordable online courses along with learning communities.</p>
-                    </section>
+                </section>
             </div>
         </HomeLayout>
     )
