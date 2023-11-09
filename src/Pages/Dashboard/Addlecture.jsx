@@ -62,7 +62,7 @@ function Addlecture (){
     return(
         <HomeLayout>
             <div className="min-h-[90vh] text-black flex flex-col items-center justify-center gap-4 mx-16">
-                <div className="flex flex-col gap-5 p-2 shadow-[0_0_10px_black] w-96 rounded-lg">
+                <div className="flex flex-col gap-5 p-2 shadow-xl w-96 rounded-lg">
                     <header className="flex items-center justify-center relative">
                         <button 
                         onClick={()=> navigate(-1)}
@@ -76,7 +76,7 @@ function Addlecture (){
                         </h1>
                     </header>
                     <form onSubmit={onFormSubmit} action=""
-                    className="flex flex-col gap-10"
+                    className="flex flex-col gap-3"
                     >
                         <input 
                         type="text"
@@ -111,7 +111,7 @@ function Addlecture (){
                                 <input type="file" className="hidden" id="lecture" name="lecture" onChange={handleVideo} accept="video/mp4 video/xmp4 video/*"/>
                             </div>
                         )}
-                        <button type="submit" className="btn btn-primary py-1 w-full font-semibold text-lg">
+                        <button type="submit" className=" py-2 px-6 bg-primary rounded-md text-white w-full font-semibold text-lg">
                             Submit
                         </button>
 

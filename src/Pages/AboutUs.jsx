@@ -31,7 +31,7 @@ function AboutUS(){
     return(
         <HomeLayout>
             <div className="pt-14 flex flex-col text-black max-w-7xl mx-auto">
-                <div className="flex flex-col-reverse md:flex-row  items-center gap-2 mx-4">
+                <div className="flex flex-col-reverse md:flex-row  items-center gap-2 mx-4 bg-secondary px-5">
                     <section className="md:w-1/2   ">
                         <h1 className="text-2xl md:text-left md:text-2xl lg:text-5xl text-primary font-semibold">
                         About Us
@@ -41,7 +41,7 @@ function AboutUS(){
                     </section>
                     <div className="md:w-1/2 ">
                         <img id="test1"
-                        style={{filter:"drop-shadow(0px 10px 10px rgb(0,0,0))"}}
+                        style={{filter:"drop-shadow(0px 10px 10px white)"}}
                         alt="about main image"
                         className="drop-shadow-2xl md:pl-10"
                         src={aboutImg}
@@ -52,14 +52,14 @@ function AboutUS(){
                     {celebrities && celebrities.map(celb =>  <CarouselSlide {...celb} key={celb.slideNumber} totalSlides={celebrities.length}/>)}
                
                 </div>
-                <div className="flex justify-center items-center text-5xl ">
+                {/* <div className="flex justify-center items-center text-5xl ">
                     Our Services
-                </div>
-                <section>
+                </div> */}
+                {/* <section>
                     <img src="" alt="" />
                         <h1>Affordable online courses</h1>
                         <p>Affordable online courses along with learning communities.</p>
-                </section>
+                </section> */}
             </div>
         </HomeLayout>
     )

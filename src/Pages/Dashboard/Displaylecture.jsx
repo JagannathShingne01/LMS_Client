@@ -100,7 +100,7 @@ function Displaylectures(){
                 
             </div> :(
                 role === "ADMIN" && (
-                    <button onClick={()=> navigate("/course/addlecture",{state: {...state}})} className="btn-primary px-2 py-1 rounded-md font-semibold text-sm">
+                    <button onClick={()=> navigate("/course/addlecture",{state: {...state}})} className="bg-primary px-4 py-3 text-white rounded-md font-semibold text-sm">
                        Add new Lecture
                    </button>
                )

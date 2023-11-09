@@ -2,11 +2,10 @@ import { useNavigate } from "react-router-dom";
 
 function CourseCard ({data}){
     const navigate = useNavigate();
-
     return(
         <div 
-        onClick={()=>navigate("/courses/description/", {state:{...data}})}
-        className="text-black w-[22rem] h-[380px] rounded-lg cursor-pointer group overflow-hidden ring-1 ring-base-300 hover:shadow-2xl">
+        
+        className="text-black w-[22rem]  rounded-lg cursor-pointer group overflow-hidden ring-1 ring-gray-400 hover:shadow-xl hover:bg-secondary/40 ">
             <div className="overflow-hidden">
                 <img
                 alt="Course Thumbnail"
@@ -32,7 +31,12 @@ function CourseCard ({data}){
                         <span className="text-primary font-bold"> Instructer : </span>
                         {data?.createdBy}
                     </p>
-                    
+                  <button
+                  className="bg-primary hover:bg-primary/90 text-white text-xl rounded-md font-bold my-4 py-2 w-full hover:bg-light  transition-all ease-in-out duration-300"
+                  onClick={()=>navigate("/courses/description/", {state:{...data}})}
+                  >
+                    Explore Course
+                  </button>
                 </div>
             </div>
         </div>
