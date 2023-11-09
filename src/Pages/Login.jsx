@@ -45,11 +45,11 @@ function Login() {
   return (
     <>
       <HomeLayout>
-        <div className="flex items-center justify-center h-screen ">
+        <div className="flex items-center justify-center h-screen">
           <form
             onSubmit={onLogin}
             noValidate
-            className="flex flex-col justify-center gap-3 rounded-lg p-4 text-black mt-6 md:w-96 shadow-[0_0_10px_black]"
+            className="flex flex-col justify-center gap-3 rounded-lg p-4 text-black mt-6 md:w-96 shadow-2xl"
           >
             <h1 className="text-center text-2xl font-bold">Login Page</h1>
             <div className="flex flex-col gap-1">
@@ -84,7 +84,7 @@ function Login() {
             </div>
             <button
               type="submit"
-              className="bg-light py-2 text-lg cursor-pointer  hover:bg-yellow-400 rounded transition-all ease-in-out duration-300"
+              className="bg-light py-2 text-lg cursor-pointer bg-primary text-white  hover:bg-primary/90 rounded transition-all ease-in-out duration-300"
             >
               Login
             </button>

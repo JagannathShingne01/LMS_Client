@@ -70,7 +70,7 @@ function Checkout (){
                     className="min-h-[90vh] flex items-center justify-center text-black"
 
                 >
-                    <div className="relative w-80 h-[27rem] flex flex-col justify-center shadow-[0_0_10px_black] rounded-lg">
+                    <div className="relative w-80 h-[27rem] flex flex-col justify-center shadow-2xl rounded-lg">
                         <h1 className="bg-primary absolute top-0 w-full text-center py-4 text-2xl font-bold rounded-t-lg">Subscription Bundle</h1>
                         <div className="px-4 space-y-5 text-center">
                             <p className="text-[17px]">

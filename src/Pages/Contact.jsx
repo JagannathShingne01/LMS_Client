@@ -63,13 +63,13 @@ function Contact() {
                             </h1> */}
 
             <div className="flex flex-col justify-start">
-              <div className="lg:mt-4 mb-8">
-                <h2 className="text-xl lg:text-3xl font-bold leading-tight md:text-left text-center text-primary">
+              <div className="lg:mt-4 mb-3 md:mb-8">
+                <h2 className="text-5xl lg:text-3xl font-bold leading-tight md:text-left text-center text-primary">
                   Contact Us.
                 </h2>
               </div>
               <div>
-                <h2 className="text-lg md:text-xl font-bold md:text-left text-center text-black ">
+                <h2 className="text-lg md:text-xl font-semibold md:font-bold md:text-left text-center text-black px-4 ">
                   {" "}
                   For any queries, Please reach out to us. Our Support team will
                   get back to you within 24 hours.

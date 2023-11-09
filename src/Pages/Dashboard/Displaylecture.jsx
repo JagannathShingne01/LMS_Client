@@ -40,7 +40,7 @@ function Displaylectures(){
 
                 {/* left section for playing vedios and diplaying course details to admin */}
 
-                <div className="space-y-5 w-[28rem] p-2 rounded-lg shadow-[0_0_10px_black] ">
+                <div className="space-y-5 w-[28rem] p-2 rounded-lg shadow-2xl ">
                     <video 
                     src={lectures &&  lectures[currentVideo]?.lecture?.secure_url}
                     className="object-fill rounded-t-lg w-full "
@@ -68,7 +68,7 @@ function Displaylectures(){
 
                 {/* right section for displaying list of lectures */}
 
-                <ul className="w-[28rem] p-2 rounded-lg shadow-[0_0_10px_black]">
+                <ul className="w-[28rem] p-2 rounded-lg shadow-2xl">
                         <li className="font-semibold text-xl text-primary flex items-center justify-between">
                             <p>
                                 Lectures List

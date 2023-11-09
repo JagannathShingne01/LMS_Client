@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade, FadeInStagger } from "../Helpers/animation";
 
 const data = [
     {
@@ -66,10 +67,12 @@ const data = [
           </div>
         </div>
         <div className="mx-auto  mt-6 max-w-2xl sm:mt-8 lg:mt-6 lg:max-w-7xl ">
+         
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3  text-center place-items-center mx-auto">
             {data.map((data) => (
+               <Fade  key={data.title}>
               <div
-                key={data.title}
+               
                 className="flex flex-col hover:bg-white/50 h-full backdrop-blur-xl rounded-xl p-4 group duration-300 transition-colors"
               >
                 <dt className="text-xl pt-2 pb-1 font-semibold leading-7 text-primary">
@@ -82,8 +85,10 @@ const data = [
                   <p className="flex-auto text-black/70">{data.description}</p>
                 </dd>
               </div>
+              </Fade>
             ))}
           </dl>
+         
         </div>
       </div>
     );
