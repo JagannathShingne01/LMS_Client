@@ -52,6 +52,9 @@ function AboutUS(){
                         />
                     </div>
                 </div>
+                <div className="flex justify-center items-center text-lg md:text-4xl pt-6">
+                    Our Mentors
+                </div>
                 <div className="carousel md:w-1/2 mx-4 md:mx-auto my-10 ">
                     {celebrities && celebrities.map(celb =>  <CarouselSlide {...celb} key={celb.slideNumber} totalSlides={celebrities.length}/>)}
                

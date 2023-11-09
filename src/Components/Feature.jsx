@@ -20,9 +20,9 @@ const data = [
       ),
     },
     {
-      title: "Trusted Connections",
+      title: "Learning Journeys",
       description:
-        "Over the years, we've built relationships with reliable manufacturers and suppliers. This network ensures that the equipment we offer is of the highest quality, sourced from trusted sources.",
+        "Chart the dynamic odyssey of knowledge with Learning Journeys. This table is a mosaic of student enrollments, weaving together tales of progress, exploration, and triumph. Discover who's embarked on which course, their educational milestones, and the narrative of their evolving learning experience.",
       icon: (props) => (
         <div>
           <svg
@@ -37,9 +37,9 @@ const data = [
       ),
     },
     {
-      title: "Personalized Support      ",
+      title: "Mentor Network",
       description:
-        "We know every project is unique. That's why our team works closely with you, understanding your specific requirements. Our advice and solutions are tailored to your project, ensuring you get exactly what you need.",
+      "Welcome to the Mentor Network, where expertise meets inspiration. This table is a gallery of our esteemed instructors—visionaries who guide and inspire. Uncover their profiles, areas of mastery, and the courses they passionately orchestrate.",
       icon: (props) => (
         <div>
           <svg
