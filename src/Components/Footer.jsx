@@ -32,7 +32,7 @@ function Footer(){
                         return (
                             <p key={val.name}>
                               <Link
-                                href={val.href}
+                                to={val.href}
                                 className="text-gray-700 transition hover:opacity-75"
                               >
                                 {val.name}
