@@ -34,7 +34,7 @@ function HomePage(){
                             Signup
                             </button>
                         </Link>
-                        <Link to={"/signup"} className="absolute top-5 right-7 "> 
+                        <Link to={"/login"} className="absolute top-5 right-7 "> 
                             <button className="border border-1 text-black hover:bg-secondary/40 px-2 py-2 lg:px-8 lg:py-2 font-semibold text-sm md:text-lg cursor-pointer hover:bg-light transition-all ease-in-out duration-300 rounded-md rounded-tl-xl">
                             Login
                             </button>
