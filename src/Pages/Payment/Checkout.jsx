@@ -94,7 +94,6 @@ function Checkout (){
                             </button>
                         </div>
                     </div>
-
                 </form>
             </div>
         </HomeLayout>
