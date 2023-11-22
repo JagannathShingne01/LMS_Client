@@ -7,8 +7,7 @@ export default {
       colors: {
         primary: "#961816",
         secondary: "#e2e2e2",
-        textline: '#020617'
-        
+        textline: "#020617"
       },
     },
   },
