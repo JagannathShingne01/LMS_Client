@@ -12,20 +12,18 @@ import { useSelector } from "react-redux";
 
 function HomePage(){
     const  isLoggedIn = useSelector((state)=> state?.auth?.role)
-<<<<<<< HEAD
         
     return(
         <HomeLayout>
             <div className="pt-10  md:max-w-5xl lg:max-w-7xl text-black flex flex-col-reverse md:flex-row items-center justify-center md:h-screen  mx-6 lg:mx-auto">
             {isLoggedIn &&  (
-=======
-    return(
-        <HomeLayout>
+    // return(
+    //     <HomeLayout>
            
            
-           <div className="pt-10  md:max-w-5xl lg:max-w-7xl text-black flex flex-col-reverse md:flex-row items-center justify-center md:h-screen  mx-6 lg:mx-auto">
-           {isLoggedIn &&  (
->>>>>>> e11101c3589a5597b0ba2cc6e6ab5db7ec5abae7
+    //        <div className="pt-10  md:max-w-5xl lg:max-w-7xl text-black flex flex-col-reverse md:flex-row items-center justify-center md:h-screen  mx-6 lg:mx-auto">
+    //        {isLoggedIn &&  (
+
                 <div>
                <Link to={"/user/profile"} className="absolute top-5 right-7"> 
                             <button className="border border-1 text-black hover:bg-secondary/40 px-2 py-2 lg:px-8 lg:py-2 font-semibold text-sm md:text-lg cursor-pointer hover:bg-light transition-all ease-in-out duration-300 rounded-md rounded-tl-xl">
@@ -49,11 +47,9 @@ function HomePage(){
                         </Link>
                </div>)
                }
-<<<<<<< HEAD
-                <div className="lg:w-1/2 space-y-6 ml-1 md:ml-5">
-=======
+               
+              
                 <div className="lg:w-1/2 space-y-6 ml-1 md:ml-5 mt-8">
->>>>>>> e11101c3589a5597b0ba2cc6e6ab5db7ec5abae7
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black">
                         Find Out Best
                         <span className="text-primary font-bold px-2 w-20">{'<'}
@@ -90,8 +86,9 @@ available at the lowest cost.
                 <div className="lg:w-1/2 items-center justify-center mt-8">
                     <img className="pointer-events-none" src={Homepng} alt="Home Image" />
                 </div>
-                
+                  
             </div>
+            
             <div>
                 <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-5 lg:mx-auto max-w-7xl my-6 py-14 text-black/60">
                     <div className="bg-base-500 my-auto shadow-lg  rounded-md  ring-1 ring-secondary/10">
@@ -133,7 +130,7 @@ available at the lowest cost.
                 </div>
                 <Features/>
             </div>
-
+           
         </HomeLayout>
     )
 }
