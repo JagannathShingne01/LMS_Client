@@ -80,19 +80,19 @@ return(
                 Admin Dashbord
             </h1>
             <div className="grid grid-cols-2 gap-5 m-auto mx-10">
-                <div className="flex flex-col items-center gap-10 p-5 shadow-lg rounded-lg ">
+                <div className="flex flex-col items-center gap-10 p-5 shadow-lg rounded-lg bg-gray-200">
                     <div className="w-80 h-80">
                         <Pie data={userData}/>
                     </div>
                     <div className="grid grid-cols-2 gap-5">
-                        <div className="flex items-center justify-between p-5 gap-5 rounded-lg shadow-lg">
+                        <div className="flex items-center justify-between p-5 gap-5 rounded-lg shadow-lg bg-gray-300">
                             <div className="flex flex-col items-center ">
                                 <p className="font-semibold "> Registered Users </p>
                                 <h3 className="text-2xl md:text-4xl font-bold">{allUsersCount}</h3>
                             </div>
                             <FaUsers className="text-primary text-5xl"/>
                         </div>
-                        <div className="flex items-center justify-between p-5 gap-5 rounded-lg shadow-lg">
+                        <div className="flex items-center justify-between p-5 gap-5 rounded-lg shadow-lg bg-gray-300">
                             <div className="flex flex-col items-center ">
                                 <p className="font-semibold "> Subscribed Users </p>
                                 <h3 className="text-2xl md:text-4xl font-bold">{subscribedCount}</h3>
@@ -107,7 +107,7 @@ return(
                     <Bar className="absolute bottom-0 h-80 w-full" data={salesData}/>
                 </div>
                 <div className="grid grid-cols-2 gap-5">
-                    <div className="flex items-center justify-between p-5 gap-5 rounded-lg shadow-lg">
+                    <div className="flex items-center justify-between p-5 gap-5 rounded-lg shadow-lg bg-gray-300">
                                 <div className="flex flex-col items-center ">
                                     <p className="font-semibold "> Subscription Count </p>
                                     <h3 className="text-2xl md:text-4xl font-bold">{allPayments?.count}</h3>
@@ -115,7 +115,7 @@ return(
 
                                 <FcSalesPerformance className="text-primary text-5xl"/>
                     </div>
-                    <div className="flex items-center justify-between p-5 gap-5 rounded-lg shadow-lg">
+                    <div className="flex items-center justify-between p-5 gap-5 rounded-lg shadow-lg bg-gray-300">
                                 <div className="flex flex-col items-center ">
                                     <p className="font-semibold "> Total Revenue </p>
                                     <h3 className="text-2xl md:text-4xl font-bold">{allPayments?.count * 499}</h3>
@@ -133,7 +133,7 @@ return(
                     <button 
                         onClick={()=>{
                             navigate("/course/create")}}
-                            className="bg-light py-2 w-fit px-4 text-lg font-semibold cursor-pointer  hover:bg-yellow-400 rounded transition-all ease-in-out duration-300"
+                            className=" bg-gray-300 py-2 w-fit px-4 text-lg font-semibold cursor-pointer  hover:bg-yellow-400 rounded transition-all ease-in-out duration-300"
                             >
                             Create New Course
                     </button>
@@ -141,7 +141,7 @@ return(
 
                 <table className="table overflow-x-scroll">
                     <thead>
-                        <tr>
+                        <tr className="text-primary/75 font-medium text-xl">
                             <th>S.no</th>
                             <th>Course Title</th>
                             <th>Course Category</th>

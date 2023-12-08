@@ -45,7 +45,7 @@ import { logout } from '../Redux/Slices/AuthSlice'
                 <label htmlFor="my-drawer" className='cursor-pointer relative'>
                     <FiMenu
                     size={"32px"}
-                    className= "font-bold text-primary m-4 "
+                    className= "font-bold text-primary hover:text-secondary m-4 "
                     />
                 </label>
             </div>
@@ -83,23 +83,23 @@ import { logout } from '../Redux/Slices/AuthSlice'
                     {!isLoggedIn && (
                         <li className='absolute bottom-4 w-[90%]'>
                         <div className='w-full flex items-center justify-center'>
-                            <button className='btn-primary px-4 py-1 font-semibold rounded-md w-full'>
+                            <button className='bg-gray-100 border border-gray-500 hover:bg-gray-50 px-4 py-1 font-semibold rounded-md w-full text-black'>
                                 <Link to="/login">Login</Link>
                             </button>
-                            <button className='btn-secondary px-4 py-1 font-semibold rounded-md w-full'>
+                            <button className='bg-gray-100 border border-gray-500 hover:bg-gray-50 px-4 py-1 font-semibold rounded-md w-full  text-black'>
                                 <Link to="/signup">Signup</Link>
                             </button>
                         </div>
                         </li>
                     )}
 
-                    {isLoggedIn && (
+                    {   isLoggedIn && (
                         <li className='absolute bottom-4 w-[90%]'>
                         <div className='w-full flex items-center justify-center'>
-                            <button className='btn-primary px-4 py-1 font-semibold rounded-md w-full'>
+                            <button className='bg-gray-100 border border-gray-500 hover:bg-gray-50 px-4 py-1 font-semibold rounded-md w-full  text-black'>
                                 <Link to="/user/profile">Profile</Link>
                             </button>
-                            <button className='btn-secondary px-4 py-1 font-semibold rounded-md w-full'>
+                            <button className='bg-gray-100 border border-gray-500 hover:bg-gray-50 px-4 py-1 font-semibold rounded-md w-full  text-black'>
                                 <Link onClick={handleLogout}>Logout</Link>
                             </button>
                         </div>

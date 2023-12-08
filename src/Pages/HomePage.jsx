@@ -7,21 +7,39 @@ import homepng2 from "../../src/Assets/png/statistics2.png"
 import homepng3 from "../../src/Assets/png/statistics3.png"
 import homepng4 from "../../src/Assets/png/statistics4.png"
 import Features from "../Components/Feature";
+import { useSelector } from "react-redux";
 
 
 function HomePage(){
-
+    const  isLoggedIn = useSelector((state)=> state?.auth?.role)
         
     return(
         <HomeLayout>
             <div className="pt-10  md:max-w-5xl lg:max-w-7xl text-black flex flex-col-reverse md:flex-row items-center justify-center md:h-screen  mx-6 lg:mx-auto">
-               <div>
-               <Link to={"/login"} className="absolute top-5 right-7"> 
+            {isLoggedIn &&  (
+                <div>
+               <Link to={"/user/profile"} className="absolute top-5 right-7"> 
                             <button className="border border-1 text-black hover:bg-secondary/40 px-2 py-2 lg:px-8 lg:py-2 font-semibold text-sm md:text-lg cursor-pointer hover:bg-light transition-all ease-in-out duration-300 rounded-md rounded-tl-xl">
-                                Login
+                            Profile
                             </button>
                         </Link>
-               </div>
+               </div>)
+               }
+
+            {!isLoggedIn &&  (
+                <div className="">
+               <Link to={"/signup"} className="absolute top-5 md:right-36"> 
+                            <button className="border border-1 text-black hover:bg-secondary/40 px-2 py-2 lg:px-8 lg:py-2 font-semibold text-sm md:text-lg cursor-pointer hover:bg-light transition-all ease-in-out duration-300 rounded-md rounded-tl-xl">
+                            Signup
+                            </button>
+                        </Link>
+                        <Link to={"/login"} className="absolute top-5 right-7 "> 
+                            <button className="border border-1 text-black hover:bg-secondary/40 px-2 py-2 lg:px-8 lg:py-2 font-semibold text-sm md:text-lg cursor-pointer hover:bg-light transition-all ease-in-out duration-300 rounded-md rounded-tl-xl">
+                            Login
+                            </button>
+                        </Link>
+               </div>)
+               }
                 <div className="lg:w-1/2 space-y-6 ml-1 md:ml-5">
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black">
                         Find Out Best

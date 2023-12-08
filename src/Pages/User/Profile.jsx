@@ -40,14 +40,14 @@ function Profile(){
                 <div className="flex items-center justify-between gap-2">
                     <Link 
                         to="/changepassword" 
-                        className="w-1/2 bg-primary hover:bg-light transition-all ease-in-out duration-300 rounded-sm font-semibold py-2 cursor-pointer">
+                        className="w-1/2 bg-secondary hover:bg-light transition-all ease-in-out duration-300 rounded-sm font-semibold py-2 cursor-pointer">
                             <button className="ml-2">
                                 Change Password
                             </button>
                     </Link>
                     <Link 
                         to="/user/editprofile" 
-                        className="w-1/2 bg-primary hover:bg-light transition-all ease-in-out duration-300 rounded-sm font-semibold py-2 cursor-pointer">
+                        className="w-1/2 bg-secondary hover:bg-light transition-all ease-in-out duration-300 rounded-sm font-semibold py-2 cursor-pointer">
                             <button className="ml-2">
                                 Edit Profile
                             </button>

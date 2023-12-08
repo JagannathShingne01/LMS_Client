@@ -22,10 +22,10 @@ function Checkout (){
 
     async function handleSubscription(e){
         e.preventDefault();
-        if(!razorpayKey || !subscription_id){
-            toast.error("Something went wrong, Try again!");
-            return;
-        }
+        // if(!razorpayKey || !subscription_id){
+        //     toast.error("Something went wrong, Try again!");
+        //     return;
+        // }
         const options = {
             key: razorpayKey,
             subscription_id: subscription_id,
