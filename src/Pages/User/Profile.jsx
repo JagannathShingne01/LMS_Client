@@ -19,6 +19,7 @@ function Profile(){
     }
     useEffect(() => {
         // getting user details
+        userData;
         dispatch(getUserData());
       }, []);
     return(
