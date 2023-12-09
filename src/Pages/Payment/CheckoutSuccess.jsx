@@ -26,8 +26,8 @@ function CheckoutSuccess(){
                         </div>
                         <AiFillCheckCircle className="text-green-500 text-5xl"/>
                     </div>
-                    <Link to="/" className="bg-green-500 hover:bg-green-600 transition-all ease-in-out duration-300 absolute bottom-0 w-full text-center rounded-b-lg">
-                        <button className="py-2 font-semibold text-lg">Go To dashboard </button>
+                    <Link to="/course/displaylecture" className="bg-green-500 hover:bg-green-600 transition-all ease-in-out duration-300 absolute bottom-0 w-full text-center rounded-b-lg">
+                        <button className="py-2 font-semibold text-lg">Go To Lectures </button>
                     </Link>
 
                 </div>

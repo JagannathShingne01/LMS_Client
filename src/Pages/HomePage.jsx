@@ -15,14 +15,10 @@ function HomePage(){
         
     return(
         <HomeLayout>
+            
             <div className="pt-10  md:max-w-5xl lg:max-w-7xl text-black flex flex-col-reverse md:flex-row items-center justify-center md:h-screen  mx-6 lg:mx-auto">
             {isLoggedIn &&  (
-    // return(
-    //     <HomeLayout>
-           
-           
-    //        <div className="pt-10  md:max-w-5xl lg:max-w-7xl text-black flex flex-col-reverse md:flex-row items-center justify-center md:h-screen  mx-6 lg:mx-auto">
-    //        {isLoggedIn &&  (
+        
 
                 <div>
                <Link to={"/user/profile"} className="absolute top-5 right-7"> 
