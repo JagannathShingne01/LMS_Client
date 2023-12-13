@@ -19,6 +19,8 @@ import CheckoutFailure from './Pages/Payment/CheckoutFailure'
 import Displaylectures from './Pages/Dashboard/Displaylecture'
 import Addlecture from './Pages/Dashboard/Addlecture'
 import AdminDashboard from './Pages/Dashboard/AdminDashbord'
+import ForgetPass from './Pages/User/ForgetPass'
+import ResetPass from './Pages/User/ResetPass'
 function App() {
 
   return (
@@ -31,13 +33,14 @@ function App() {
         <Route path='/courses' element={<CourseList/>} ></Route>
         <Route path='/contact' element={<Contact/>} ></Route>
         <Route path='/denied' element={<Denied/>} ></Route>
+        <Route path='/forgetpassword' element={<ForgetPass/>}></Route>
+        <Route path='/reset-password/:resetToken' element={<ResetPass/>}></Route>
         <Route path='/courses/description' element={<CoueseDescription/>} ></Route>
         
         <Route element={<RequireAuth allowedRoles={["ADMIN"]}/>}>
             <Route path='/course/create' element={<CreateCourse/>} ></Route>
             <Route path='/course/addlecture' element={<Addlecture/>}></Route>
             <Route path='/admin/dashboard' element={<AdminDashboard/>}></Route>
-
         </Route>
         <Route element={<RequireAuth allowedRoles={["ADMIN","USER"]}/>}>
             <Route path='/user/profile' element={<Profile/>}></Route>
@@ -46,7 +49,6 @@ function App() {
             <Route path='/checkout/success' element={<CheckoutSuccess/>}></Route>
             <Route path='/checkout/failure' element={<CheckoutFailure/>}></Route>
             <Route path='/course/displaylecture' element={<Displaylectures/>}></Route>
-
         </Route>
 
         
