@@ -45,7 +45,7 @@ function Footer(){
               </div>
               </div>
              <button onClick={toTop}>
-          <div className="absolute right-4 bottom-4 md:right-16 md:bottom-auto md:top-5  bg-primary p-3 rounded-full ">
+          <div className="absolute right-4 bottom-4 md:right-16 md:bottom-auto md:top-5  hover:bg-primary p-3 rounded-full ">
             <BsFillArrowUpCircleFill className="h-6 w-6 text-white " />{" "}
           </div>
         </button>
